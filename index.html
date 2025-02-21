@@ -1,12 +1,109 @@
 <!DOCTYPE html>
 <head>
 
+	<title>Applocker in 2025</title>
+
+	<style>
+	*{
+		margin: 0px;
+		padding: 0px;
+		font-family: Tahoma, sans-serif;
+		box-sizing: border-box;
+	}
+	body{
+		margin: 0px;
+		padding: 0px;
+		background-color: #EEE;
+	}
+
+	#top-main{
+		width: 100%;
+		height: 600px;
+		background-color: #111;
+		text-align: center;
+		color: #EEE;
+		padding-top: 25px;
+	}
+
+	#top-main h1{
+		margin-bottom: 25px;
+	}
+
+	#top-main h3{
+		margin-bottom: 58px;
+		color: #BBB;
+		font-weight: normal;
+	}
+
+	#middle-main{
+		width: 50%;
+		margin: 50px auto;
+		text-align: center;
+	}
+
+	#middle-main h1{
+		letter-spacing: 3px;
+		color: #333;
+		margin-bottom: 35px;
+	}
+
+	.boxes{
+		width: 100%;
+		background-color: #FFF;
+		border: 1px solid #DDD;
+		margin-top: 50px;
+		padding: 25px;
+	}
+
+	.boxes h3{
+		font-weight: normal;
+		margin-bottom: 25px;
+	}
+
+	.left{
+		text-align: left;
+		margin-bottom: 25px;
+	}
+	
+	</style>
+
 </head>
 <body>
+	<div id="top-main">
 
-	<h1>Coming Soon</h1>
-	<p>2025 Applocker Bypass List</p>
-	<hr>
+		<h1>How to bypass applocker(or WDAC) in 2025 on Windows 11</h1>
+		<h3>Is applocker bypass still possible in 2025 on Windows 11?</h3>
+		<img src="images/applocker.png" />
+
+	</div>
+	<div id="middle-main">
+			<h1>On this site I will display ways to bypass applocker in 2025</h1>
+			<p>So what are the different ways?</p>
+
+		<div class="boxes">
+
+			<h1>Use Winget</h1>
+			<h3>Simply use Winget to install whatever you want from the Winget Repo</h3>
+
+			<div class="left">
+				1. Open the Command Prompt(cmd)<br />
+				2. Use the winget command to download and install: winget install 9P7KNL5RWT25 (This is sysinternals)<br />
+				3. Open the folder C:\Program Files\WindowsApps\Microsoft.SysinternalsSuite_2024.12.0.0_x64__8wekyb3d8bbwe\tools\<br />
+				4. All sysinternal tools can be executes, even if applocker policy is enabled
+			</div>
+			
+		</div>
+		<div class="boxes">
+
+			<h1>Video PoC</h1>
+			<h3>Here is a video PoC of Applocker(and WDAC) bypass using Winget</h3>
+
+<iframe width="760" height="315" src="https://www.youtube.com/embed/zuL7x4Wltto?si=mkpdIRumAo17n9Ye" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			
+		</div>
+
+
+	</div>
 
 </body>
 </html>
