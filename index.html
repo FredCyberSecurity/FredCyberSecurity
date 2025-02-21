@@ -89,7 +89,7 @@
 				1. Open the Command Prompt(cmd)<br />
 				2. Use the winget command to download and install: winget install 9P7KNL5RWT25 (This is sysinternals)<br />
 				3. Open the folder C:\Program Files\WindowsApps\Microsoft.SysinternalsSuite_2024.12.0.0_x64__8wekyb3d8bbwe\tools\<br />
-				4. All sysinternal tools can be executes, even if applocker policy is enabled
+				4. All sysinternal tools can be executed, even if applocker policy is enabled
 			</div>
 			
 		</div>
@@ -99,6 +99,22 @@
 			<h3>Here is a video PoC of Applocker(and WDAC) bypass using Winget</h3>
 
 <iframe width="760" height="315" src="https://www.youtube.com/embed/zuL7x4Wltto?si=mkpdIRumAo17n9Ye" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			
+		</div>
+
+		<div class="boxes">
+
+			<h1>C:\Windows\CCM\Temp\</h1>
+			<h3>On config manager(SCCM) managed devices, there is a folder: C:\Windows\CCM\Temp\ - Where the INTERACTIVE user group has read,execute and write permission.</h3>
+
+			<div class="left">
+				1. Put your executable in this folder - C:\Windows\CCM\Temp\<br />
+				2. Make sure to change the permission on this executable so you have execute permissions<br />
+				3. Execute your executable<br />
+				4. Applocker allows execution from files under C:\Windows\ - And that's why this will work. <br /><br />
+
+				NB: Only works when the client is SCCM managed.
+			</div>
 			
 		</div>
 
