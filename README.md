@@ -28,6 +28,6 @@ Simply
 
 Applocker allows execution from files under C:\Windows\ - And that's why this will work.
 
-NB: Only works when thhe client is SCCM managed.
+NB: Only works when the client is SCCM managed.
 
 
