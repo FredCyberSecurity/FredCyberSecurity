@@ -2,7 +2,7 @@
 
 
 
-##Winget(On any windows installation)
+## Winget(On any windows installation)
 
 You can use Winget to bypass Applocker.
 Simply use the winget command to download and install whatever application you want from the winget repo:
