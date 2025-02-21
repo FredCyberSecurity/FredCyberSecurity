@@ -23,7 +23,11 @@ On config manager managed devices there is a folder: C:\Windows\CCM\Temp\ - Wher
 Simply 
 
 1. Put your executable in this folder
-2. Make sure to change the permission on this executable so you have execute permission
+2. Make sure to change the permission on this executable so you have execute permissions
 3. Execute your executable
+
+Applocker allows execution from files under C:\Windows\ - And that's why this will work.
+
+NB: Only works when thhe client is SCCM managed.
 
 
